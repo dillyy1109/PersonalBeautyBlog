@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chic Review - Homepage</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!-- Header section of the page containing the website's name and navigation menu -->
+<header>
+    <div class="logo">Chic Review</div>
+    <nav>
+        <!-- The <ul> tag is used to represent the links leading to other pages -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skincare-reviews.html">Skincare</a></li>
+            <li><a href="makeups-reviews.html">Makeup</a></li>
+            <li><a href="personal-blogs.html">Blog</a></li>
+            <li><a href="beauty-bloggers.html">Fav Bloggers</a></li>
+            <li><a href="questions-page.html">FAQs</a></li>
+            <li><a href="shop-recommendations.html">Shop</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- The <h2> tag is used to display the name of the website and the purpose of it -->
+<h2>Q&A Pages</h2>
+<!-- This <p> tag is used to represent a paragraph about the introduction to this page -->
+<p>As a skincare and makeup enthusiast, I love sharing my experiences with the products I use and review. In this section, I've gathered answers to some of the most common questions I receive from my readers. Whether you're wondering how to identify your skin type, when to start learning makeup, or how to know if a product suits your skin, you'll find useful insights here. If you have more questions, feel free to reach out—I’m always happy to help!</p>
+<!-- Conainer for FAQ items -->
+<div class="faq-container">
+    <div class="faq active">
+        <!-- Title of FAQ 1 -->
+        <h4 class="faq-title">1. How do I know my skin type?</h4>
+        <p class="faq-text">To determine your skin type, observe how your skin feels throughout the day. If your skin feels tight or dry, you likely have dry skin. If it looks shiny, particularly in the T-zone (forehead, nose, chin), then you probably have oily skin. Combination skin shows a mix of both, while sensitive skin may react to certain products with redness or irritation. A simple test is to cleanse your face and wait an hour to see how it feels.</p>
+        <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i> <!-- Icon for dropdown toggle -->
+            <i class="fa-solid fa-xmark"></i> <!-- Icon for closing the dropdown -->
+        </button>
+    </div>
+
+    <div class="faq active">
+        <h4 class="faq-title">2. What’s the best way to apply foundation?</h4>
+        <p class="faq-text">The best way to apply foundation is to start with a clean and moisturized face. Use a primer to create a smooth base. Then, apply foundation using a brush, sponge, or your fingers, depending on your preference. For a more natural look, blend it evenly into your skin, focusing on areas where coverage is needed. Remember to set your foundation with powder to keep it in place all day.</p>
+        <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+    <div class="faq active">
+        <h4 class="faq-title">3. How often should I change my skincare routine?</h4>
+        <p class="faq-text">Your skincare routine should evolve with your skin’s needs, which can change due to factors like seasons, age, and lifestyle. Generally, you don’t need to change your routine frequently, but it’s a good idea to assess your skin every few months. If you’re experiencing new issues like dryness, acne, or sensitivity, it might be time to adjust the products you're using. Always remember to introduce new products gradually and test them for any reactions.</p>
+        <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    <div class="faq active">
+        <h4 class="faq-title">4. Can I mix different skincare products in my routine?</h4>
+        <p class="faq-text">Yes, but it's important to be mindful of the products you combine. Some ingredients, like vitamin C and retinol, may not work well together and could cause irritation. Always layer products from thinnest to thickest (e.g., serum before moisturizer). It’s a good idea to research or consult a dermatologist when mixing active ingredients to ensure compatibility for your skin.</p>
+        <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    <div class="faq active">
+        <h4 class="faq-title">5. How do I choose the right skincare products for my skin?</h4>
+        <p class="faq-text">Choosing the right skincare products depends on your skin type and concerns. For example, if you have oily skin, look for oil-free or mattifying products, while dry skin can benefit from more hydrating and nourishing formulas. Always pay attention to the ingredients—avoid harsh chemicals if you have sensitive skin and look for calming ingredients like aloe vera. It’s also a good idea to patch-test products before fully incorporating them into your routine.</p>
+        <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    <div class="faq active">
+        <h4 class="faq-title">6. When should I start using anti-aging products?</h4>
+        <p class="faq-text">You can start using anti-aging products in your mid-20s to early 30s as a preventive measure. Look for products containing antioxidants like vitamin C, which can help protect your skin from environmental damage. Incorporating retinoids or peptides into your routine after 30 can help maintain skin elasticity and promote collagen production. The key is to find products that match your skin’s needs and to stay consistent with your routine.</p>
+        <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+</div>
+
+<!-- Form for more questions -->
+<div class="product-container">
+    <form id="form">
+        <!-- Title for the form section -->
+        <h2>More questions?</h2>
+        <div class="input-control">
+            <label for="username">Your name</label> <!-- Label for the name input -->
+            <input id="username" name="username" type="text" required> <!-- Input field for name -->
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label for="email">Your email</label> <!-- Label for the name input -->
+            <input id="email" name="email" type="email" required> <!-- Input field for email -->
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label for="message">Your message</label> <!-- Label for the message input -->
+            <input id="message" name="message" type="text" required> <!-- Input field for message -->
+            <div class="error"></div>
+        </div>
+        <button type="submit">Send</button> <!-- Submit button-->
+    </form>
+    <p id="form-message"></p> <!-- Paragraph for form submission message -->
+
+</div>
+
+<!-- The footer tag is used for the website footer, containing copyright and social media links. -->
+<footer>
+    <p>&copy; 2025 Chic Review | Follow me on Instagram: @dillyynguyen__</p> 
+</footer>
+
+<script src="js/scripts.js"></script> <!-- Linking external JavaScript file -->
+</body>
+</html>
