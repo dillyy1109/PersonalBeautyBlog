@@ -1,0 +1,434 @@
+/*HOME PAGE DECORATION*/
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background:bisque;
+    padding-top: 50px; /* Add padding-top to prevent content from hiding behind header */
+}
+
+/* Header */
+header {
+    display: flex; /* Uses it for flexible and responsive positioning */
+    justify-content: space-between; /* Spaces out the header items evenly */
+    align-items: center; /* Vertically centers items in the header */
+    padding: 15px 10px; /* Add padding for space around header content  */
+    background: white; /* Set the background color to white */
+    position: fixed; /* Fixes the header to the top of the page */
+    width: 100%; /* Ensures the header spans the full width */
+    top: 0; /* Positions the header at the top of the viewport */
+    z-index: 2000; /* Ensure header stays on top */
+    box-shadow: 10px 5px 10px red(0, 0, 0, 0.1);  /* Adds a subtle shadow below the header */
+}
+
+.about h2 {
+    color:burlywood;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none; /* Removes default list bullet points */
+    padding: 0; 
+    margin: 0;
+    display: flex; /* Uses Flexbox to arrange list items horizontally */
+}
+
+nav ul li {
+    margin: 0 15px; /* Adds horizontal spacing between navigation links */
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes underlining from links */
+    color: #333;
+    font-weight: bold; /* Makes the link text bold */
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6f61; /* Changes the link color to a coral shade on hover */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 80vh; /* Adjust height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Centers the text */
+    color: black;
+    background: url('img/finalproject2.jpg') no-repeat center center/cover; /* Background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+}
+
+.hero-image {
+    position: absolute;
+    top: 0; /* Aligns the image to the top */
+    left: 0; /* Aligns the image to the left */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire section */
+    z-index: -1; /* Ensures the image is behind the text */
+}
+
+.hero-text {
+    position: relative;
+    max-width: 600px; /* Sets a maximum width for the text box */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5); /* Transparent background for text */
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Adds shadow to the text box */
+}
+
+.hero h1 {
+    font-size: 48px; /* Increases the font size of the heading */
+    margin-bottom: 10px; /* Adds space below the heading */
+}
+
+.hero p {
+    font-size: 20px; /* Sets the font size for the paragraph */
+    margin-bottom: 20px;  /* Adds space below the paragraph */
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ff6f61;
+    color: white;
+    text-decoration: none; /* Removes underlining from the link */
+    border-radius: 5px; /* Rounds the button corners */
+    transition: 0.3s; /* Adds smooth transition effect on hover */
+}
+
+.btn:hover {
+    background: #e65b50; /* Changes button background color on hover */
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+    background: white;
+}
+
+.about h2 {
+    font-size: 28px;
+}
+
+.about p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Featured Reviews */
+.featured {
+    text-align: center;
+    padding: 50px 20px; /* Adds padding around the Featured Reviews section */
+}
+
+.featured h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: flex;
+    justify-content: center; /* Centers the grid items horizontally */
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds shadow around the card */
+    text-align: center;
+    border-radius: 10px; /* Rounds the corners of the card */
+}
+
+.card img {
+    width: 100%; /* Makes the image span the full width of the card */
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: 40px; /* Adds space above the footer */
+}
+
+/* Image Section Styling */
+.image-section {
+    text-align: center; /* Centers the image horizontally */
+    padding: 20px;
+}
+
+.image-section img {
+    width: 100%; /* Makes the image responsive */
+    max-width: 600px; /* Limits the width to 600px */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow effect around the image */
+}
+
+
+/* General Styling for Product Sections */
+section {
+    padding: 40px 20px;
+    text-align: center;
+    background: #f8f8f8;
+    margin-top: 40px;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    padding: 20px;
+    width: 250px; /* Set a fixed width for each card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Make sure that the image covers the area */
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.product-card .btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #ff6f61;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.product-card .btn:hover {
+    background-color: #e65b50;
+}
+
+
+h4 {
+    margin: 50px 0 30px;
+    text-align: center; 
+}
+
+
+.faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+.faq {
+    background-color: transparent;
+    border: 1px solid white; /* Set the border for the text */
+    border-radius: 50px;
+    margin: 20px 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden; /* Hides any overflowing content */
+    transition: 0.5s ease;  /* Adds smooth transition effects when properties change */
+}
+
+.faq.active {
+    background-color: beige;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq.active::before,
+.faq.active::after {
+    content: "\f004"; 
+    font-family: "Font Awesome 6 Free";
+    color: green;
+    font-size: 112px;
+    position: absolute; /* Positions the icon absolutely */
+    opacity: 0.2; /* Makes the icon semi-transparent */
+    top: 10px;   
+    left: 20px;
+    z-index: 0;  /* Puts the icon behind other content */
+}
+
+.faq.active::before {
+    color: red;
+    top: -10px;
+    left: -30px;
+    transform: rotateY(360deg); /* Rotates the icon by 360 degrees */
+}
+
+.faq-title {
+    margin: 0 30px 30px 0;
+}
+
+.faq.active .faq-text {
+    display: block; /* Makes the FAQ text visible when FAQ is active */
+    
+}
+
+.faq-text {
+    display: none; /* Hides the FAQ text by default */
+    margin: 30px 0 0;
+    text-align: center;
+}
+
+.faq-toggle {
+    background-color: green;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Horizontally centers the content */
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+}
+
+.faq-toggle:focus {
+    outline: 0; /* Removes the outline on focus */
+}
+
+.faq-toggle .fa-xmark{
+    display: none;  /* Hides the X icon by default */
+    color: blue;
+    font-size: 24px;
+}
+
+.faq.active .faq-toggle .fa-xmark {
+    color: purple; /* Changes the color of the X icon to purple when active */
+    display: block;
+}
+
+.faq.active .faq-toggle .fa-chevron-down {
+    display: none;  /* Hides the down-chevron icon when FAQ is active */
+}
+
+
+.faq.active .faq-toggle {
+    background-color: pink;
+}
+
+
+/* the form set-up */
+#form {
+    width: 300px;
+    margin: 10px auto 0 auto;
+    padding: 20px;
+}
+
+#form h2 {
+    text-align: center;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 324px; /* Fixed: Adjusted width to match input fields */
+    color: black;
+    background-color: pink;
+    border-radius: 4px;
+}
+
+/* Input Control Fixes */
+.input-control {
+    display: flex;
+    flex-direction: column; /* Arranges input fields vertically */
+}
+
+.input-control input {
+    border: 2px solid white;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
+}
+
+
+.input-control input:focus {
+    outline: 0;
+    border-color: pink;
+}
+
+.input-control.success input {
+    border-color: green;
+}
+
+.input-control.error input {
+    border-color: red;
+}
+
+
+.input-control label {
+    text-align: left; /* Set the text to the left */
+    font-weight: bold; /* Set the text bold */
+} 
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+p {
+    text-align: center;
+}
+
+/* Blogger Section Styling */
+.blogger-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows the blogger items to wrap onto new lines */
+    justify-content: space-around; /* Distributes the blogger items evenly */
+    margin-top: 30px;
+}
